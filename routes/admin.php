@@ -18,7 +18,8 @@ Route::options('{a?}/{b?}/{c?}', function () {
 });
 Route::group(['middleware' => 'auth:api'], function (RouteContract $admin) {
     $admin->group(['prefix' => 'punish'], function (RouteContract $admin) {
-        $admin->get("/", Controllers\PunishController::class . "@punishList");//列表
+//        $admin->get("/", Controllers\PunishController::class . "@punishList");//列表
+        $admin->get("/", function(){dd(6534);});//列表
         $admin->get("/{id}",Controllers\PunishController::class.'@getPunishFirst');
         $admin->post("", Controllers\PunishController::class . "@store");//添加
         $admin->put("/{id}",Controllers\PunishController::class.'@editPunish');
