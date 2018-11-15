@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\JsonResponse;
 use App\Models\RuleTypes;
 use App\Models\Variables;
-use App\Models\signs;
+use App\Models\Signs;
 use App\Models\Punish;
 use App\Models\Rules;
 

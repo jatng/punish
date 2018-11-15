@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\JsonResponse;
 use App\Models\RuleTypes;
 use App\Models\Variables;
-use App\Models\signs;
+use App\Models\Signs;
 use App\Models\Punish;
 use App\Models\Rules;
 
@@ -19,7 +19,7 @@ class CountService
     protected $additionModel;
     protected $calculationsModel;
 
-    public function __construct(signs $addition, Punish $punishModel, RuleTypes $calculations, Rules $rules, Variables $variable)
+    public function __construct(Signs $addition, Punish $punishModel, RuleTypes $calculations, Rules $rules, Variables $variable)
     {
         $this->ruleModel = $rules;
         $this->additionModel = $addition;
